@@ -1,4 +1,5 @@
 import { Canvas } from "@react-three/fiber"
+import { OrbitControls } from "@react-three/drei"
 
 export default function Experience()
 {
@@ -12,7 +13,13 @@ export default function Experience()
         } }
     >
         <directionalLight castShadow position={ [ 1, 2, 3 ] } intensity={ 1.5 } shadow-normalBias={ 0.04 } />
-        {/* <OrbitControls makeDefault /> */}
+        <OrbitControls
+            minPolarAngle={Math.PI / 2}
+            maxPolarAngle={0}
+            enableDamping={true}
+            dampingFactor={.05}
+            rotateSpeed={.3}
+        />
         <mesh>
             <boxGeometry/>
             <meshBasicMaterial />
