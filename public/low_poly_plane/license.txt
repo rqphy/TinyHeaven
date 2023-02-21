@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low Poly Plane With Animation
+* source:	https://sketchfab.com/3d-models/low-poly-plane-with-animation-78282ac2c7a64dd8a7f39cffd9e201d7
+* author:	InfDev (https://sketchfab.com/InfDev)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low Poly Plane With Animation" (https://sketchfab.com/3d-models/low-poly-plane-with-animation-78282ac2c7a64dd8a7f39cffd9e201d7) by InfDev (https://sketchfab.com/InfDev) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

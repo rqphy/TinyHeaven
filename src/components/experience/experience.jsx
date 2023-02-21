@@ -2,6 +2,7 @@ import { Canvas } from "@react-three/fiber"
 import { OrbitControls } from "@react-three/drei"
 
 import Island from "../island/island"
+import Plane from "../plane/plane"
 
 export default function Experience()
 {
@@ -23,5 +24,6 @@ export default function Experience()
             rotateSpeed={.3}
         />
         <Island />
+        <Plane />
     </Canvas>
 }
