@@ -43,11 +43,13 @@ export default function Experience()
         <ambientLight intensity={ 0.2 } />
         <OrbitControls
             ref={ controls }
-            minPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2.06}
             maxPolarAngle={0}
             enableDamping={true}
             dampingFactor={.05}
             rotateSpeed={.3}
+            maxDistance={ 8.0 }
+            minDistance={ 3.8 }
             onChange={ updatePlane  }
         />
         <Island />
