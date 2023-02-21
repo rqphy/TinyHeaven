@@ -35,9 +35,10 @@ export default function Experience()
     >
         <OrbitControls
             ref={ controls }
+            enableDamping={ true }
+            enablePan={ false }
             minPolarAngle={ Math.PI / 2.06 }
             maxPolarAngle={ 0 }
-            enableDamping={ true }
             dampingFactor={ .05 }
             rotateSpeed={ .3 }
             maxDistance={ 8.0 }
