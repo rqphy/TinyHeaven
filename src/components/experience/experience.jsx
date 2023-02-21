@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber"
-import { OrbitControls } from "@react-three/drei"
+import { Sky, OrbitControls } from "@react-three/drei"
 import { useControls } from "leva"
 import { useRef } from "react"
 
@@ -33,25 +33,26 @@ export default function Experience()
             position: [ 0, 1, 6 ]
         } }
     >
+        <OrbitControls
+            ref={ controls }
+            minPolarAngle={ Math.PI / 2.06 }
+            maxPolarAngle={ 0 }
+            enableDamping={ true }
+            dampingFactor={ .05 }
+            rotateSpeed={ .3 }
+            maxDistance={ 8.0 }
+            minDistance={ 3.8 }
+            onChange={ updatePlane  }
+        />
         <directionalLight
             castShadow
-            position={ [ 3, 1, 1 ] }
+            position={ [ 3, 1, -1 ] }
             intensity={ 1.5 }
             shadow-normalBias={ 0.04 }
             color={ color }
         />
         <ambientLight intensity={ 0.2 } />
-        <OrbitControls
-            ref={ controls }
-            minPolarAngle={Math.PI / 2.06}
-            maxPolarAngle={0}
-            enableDamping={true}
-            dampingFactor={.05}
-            rotateSpeed={.3}
-            maxDistance={ 8.0 }
-            minDistance={ 3.8 }
-            onChange={ updatePlane  }
-        />
+        <Sky sunPosition={[ 3, 1, -1 ]} />
         <Island />
         <Plane reference={ plane } />
     </Canvas>
