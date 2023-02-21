@@ -1,6 +1,8 @@
 import { Canvas } from "@react-three/fiber"
 import { OrbitControls } from "@react-three/drei"
 
+import Island from "../island/island"
+
 export default function Experience()
 {
     return <Canvas
@@ -20,9 +22,6 @@ export default function Experience()
             dampingFactor={.05}
             rotateSpeed={.3}
         />
-        <mesh>
-            <boxGeometry/>
-            <meshBasicMaterial />
-        </mesh>
+        <Island />
     </Canvas>
 }
