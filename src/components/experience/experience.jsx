@@ -76,13 +76,13 @@ export default function Experience()
         />
         <directionalLight
             castShadow
-            position={ [ 3, 1, -1 ] }
+            position={ [ 3, 1, 0.5 ] }
             intensity={ 1.5 }
             shadow-normalBias={ 0.09 }
             color={ '#e8dfdd' }
         />
         <ambientLight intensity={ 0.2 } />
-        <Sky sunPosition={[ 3, 1, -1 ]} />
+        <Sky sunPosition={[ 3, 1, 0.5 ]} />
         <Island />
         <Plane reference={ plane } />
         <Intro />
