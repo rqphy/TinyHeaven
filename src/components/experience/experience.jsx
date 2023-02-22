@@ -8,10 +8,6 @@ import Plane from "../plane/plane"
 
 export default function Experience()
 {
-    const { color } = useControls('ambientLight', {
-        color: '#e8dfdd'
-    })
-
     const plane = useRef()
     const controls = useRef()
 
@@ -50,7 +46,7 @@ export default function Experience()
             position={ [ 3, 1, -1 ] }
             intensity={ 1.5 }
             shadow-normalBias={ 0.04 }
-            color={ color }
+            color={ '#e8dfdd' }
         />
         <ambientLight intensity={ 0.2 } />
         <Sky sunPosition={[ 3, 1, -1 ]} />
