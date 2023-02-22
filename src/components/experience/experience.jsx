@@ -1,13 +1,15 @@
 import { Canvas } from "@react-three/fiber"
 import { Sky, OrbitControls } from "@react-three/drei"
-import { useControls } from "leva"
 import { useRef } from "react"
+import useMessage from "../../stores/useMessage"
 
 import Island from "../island/island"
 import Plane from "../plane/plane"
 
 export default function Experience()
 {
+    const setMessageId = useMessage((state) => state.setMessageId)
+
     const plane = useRef()
     const controls = useRef()
 
@@ -18,6 +20,12 @@ export default function Experience()
         plane.current.rotation.y = azimuthAngle + (Math.PI / 2)
         plane.current.position.x = Math.sin(azimuthAngle) * 3
         plane.current.position.z = Math.cos(azimuthAngle) * 3
+        updateMessageId()
+    }
+
+    const updateMessageId = () =>
+    {
+        setMessageId(1)
     }
 
     return <Canvas
