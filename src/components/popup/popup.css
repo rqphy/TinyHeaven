@@ -10,11 +10,17 @@
 
 .popup article {
     font-size: 2rem;
+    line-height: 125%;
     text-align: center;
     user-select: none;
 }
 
 .popup a {
-    font-weight: bold;
     text-decoration: underline;
+}
+
+@media (max-width: 615px) {
+    .popup article {
+        font-size: 1.2rem;
+    }
 }

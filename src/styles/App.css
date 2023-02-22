@@ -25,3 +25,9 @@ canvas:active {
 	cursor: -moz-grabbing;
 	cursor: -webkit-grabbing;
 }
+
+@media (max-width: 615px) {
+	body {
+		font-size: 12px;
+	}
+}
