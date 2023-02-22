@@ -1,4 +1,5 @@
 import './styles/reset.css'
+import './styles/typography.css'
 import './styles/App.css'
 import Experience from './components/experience/experience'
 import Header from './components/header/header'

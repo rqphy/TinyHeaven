@@ -8,9 +8,9 @@ export default function Popup()
     const setMessagesLength = useMessage((state) => state.setMessagesLength)
 
     const messages = [
-        <article>Tiny Heaven is a small world created to discover React Three Fiber.</article>,
+        <article>Tiny Heaven is a small world I created to practice React Three Fiber.</article>,
         <article>Let's enjoy the calmness of this beautiful place.</article>,
-        <article>Discover more of my projects <a href="https://ferreira-raphael.netlify.app" target="_blank" rel="noopener noreferrer">here</a>.</article>
+        <article>Discover more projects on my <a href="https://ferreira-raphael.netlify.app" target="_blank" rel="noopener noreferrer">portfolio</a>.</article>
     ]
 
     useEffect(() =>

@@ -5,7 +5,6 @@
     width: 50%;
     max-width: 650px;
     transform: translateX(-50%);
-    background-color: tomato;
     z-index: 5;
 }
 
@@ -17,4 +16,5 @@
 
 .popup a {
     font-weight: bold;
+    text-decoration: underline;
 }
