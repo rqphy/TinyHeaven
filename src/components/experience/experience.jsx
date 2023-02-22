@@ -5,6 +5,7 @@ import useMessage from "../../stores/useMessage"
 
 import Island from "../island/island"
 import Plane from "../plane/plane"
+import Intro from "../intro/intro"
 
 export default function Experience()
 {
@@ -84,5 +85,6 @@ export default function Experience()
         <Sky sunPosition={[ 3, 1, -1 ]} />
         <Island />
         <Plane reference={ plane } />
+        <Intro />
     </Canvas>
 }
