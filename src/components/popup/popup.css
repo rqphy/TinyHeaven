@@ -20,6 +20,9 @@
 }
 
 @media (max-width: 615px) {
+    .popup {
+        width: 80%;
+    }
     .popup article {
         font-size: 1.2rem;
     }
