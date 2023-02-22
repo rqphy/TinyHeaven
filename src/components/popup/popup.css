@@ -1,0 +1,19 @@
+.popup {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    width: 50%;
+    max-width: 650px;
+    transform: translateX(-50%);
+    background-color: tomato;
+    z-index: 5;
+}
+
+.popup article {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.popup a {
+    font-weight: bold;
+}
