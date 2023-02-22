@@ -59,7 +59,7 @@ export default function Experience()
             fov: 45,
             near: 0.1,
             far: 200,
-            position: [ -3, -1, 6 ]
+            position: [ -1, -1, 6 ]
         } }
     >
         <OrbitControls
@@ -78,7 +78,7 @@ export default function Experience()
             castShadow
             position={ [ 3, 1, -1 ] }
             intensity={ 1.5 }
-            shadow-normalBias={ 0.04 }
+            shadow-normalBias={ 0.09 }
             color={ '#e8dfdd' }
         />
         <ambientLight intensity={ 0.2 } />

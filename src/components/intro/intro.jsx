@@ -28,11 +28,6 @@ export default function Intro()
 
     useFrame(state =>
     {
-        console.log([
-            state.camera.position.x,
-            state.camera.position.y,
-            state.camera.position.z,
-        ])
         TWEEN.update()
         return null
     })
