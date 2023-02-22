@@ -3,7 +3,7 @@ import create from 'zustand'
 export default create((set) =>
 {
     return {
-        messageId: 0,
+        messageId: -1,
 
         setMessageId: (id) =>
         {

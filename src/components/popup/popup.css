@@ -12,6 +12,7 @@
 .popup article {
     font-size: 2rem;
     text-align: center;
+    user-select: none;
 }
 
 .popup a {

@@ -9,23 +9,48 @@ import Plane from "../plane/plane"
 export default function Experience()
 {
     const setMessageId = useMessage((state) => state.setMessageId)
+    // const messageId = useMessage((state) => state.messageId)
 
     const plane = useRef()
     const controls = useRef()
 
-    const updatePlane = () =>
+    const handleOrbitMove = () =>
     {
-        const azimuthAngle = controls.current.getAzimuthalAngle()
-        if(!plane) return
+        let azimuthAngle = controls.current.getAzimuthalAngle()
+        if( plane )
+        {
+            updatePlane(azimuthAngle)
+        }
+        updateMessageId(azimuthAngle)
+    }
+
+    const updatePlane = (azimuthAngle) =>
+    {
         plane.current.rotation.y = azimuthAngle + (Math.PI / 2)
         plane.current.position.x = Math.sin(azimuthAngle) * 3
         plane.current.position.z = Math.cos(azimuthAngle) * 3
-        updateMessageId()
     }
 
-    const updateMessageId = () =>
+    const updateMessageId = (azimuthAngle) =>
     {
-        setMessageId(1)
+        let totMessages = 3
+        let tempId = -1
+        azimuthAngle /= 2*Math.PI
+        if(azimuthAngle < 0)
+        {
+            azimuthAngle += 1
+        }
+
+        for(let i = 0; i < totMessages; i++)
+        {
+            if( azimuthAngle >= 0.02 + i / totMessages
+                && azimuthAngle < 0.25 + i / totMessages
+            ) {
+                tempId = i
+                break
+            }
+        }
+        setMessageId(tempId)
     }
 
     return <Canvas
@@ -47,7 +72,7 @@ export default function Experience()
             rotateSpeed={ .3 }
             maxDistance={ 8.0 }
             minDistance={ 3.8 }
-            onChange={ updatePlane  }
+            onChange={ handleOrbitMove  }
         />
         <directionalLight
             castShadow
