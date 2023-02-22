@@ -9,7 +9,7 @@ import Plane from "../plane/plane"
 export default function Experience()
 {
     const setMessageId = useMessage((state) => state.setMessageId)
-    // const messageId = useMessage((state) => state.messageId)
+    const messagesLength = useMessage((state) => state.messagesLength)
 
     const plane = useRef()
     const controls = useRef()
@@ -33,7 +33,6 @@ export default function Experience()
 
     const updateMessageId = (azimuthAngle) =>
     {
-        let totMessages = 3
         let tempId = -1
         azimuthAngle /= 2*Math.PI
         if(azimuthAngle < 0)
@@ -41,10 +40,10 @@ export default function Experience()
             azimuthAngle += 1
         }
 
-        for(let i = 0; i < totMessages; i++)
+        for(let i = 0; i < messagesLength; i++)
         {
-            if( azimuthAngle >= 0.02 + i / totMessages
-                && azimuthAngle < 0.25 + i / totMessages
+            if( azimuthAngle >= 0.02 + i / messagesLength
+                && azimuthAngle < 0.25 + i / messagesLength
             ) {
                 tempId = i
                 break
