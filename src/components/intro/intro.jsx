@@ -1,32 +1,39 @@
 import * as THREE from 'three'
 
+
 import { useEffect, useState } from "react"
-import { useFrame } from "@react-three/fiber"
+import { useFrame, useThree } from "@react-three/fiber"
+import { TWEEN } from 'three/examples/jsm/libs/tween.module.min.js'
+
+const animateCamera = (position, camera) =>
+{
+    new TWEEN.Tween(camera.position)
+        .to(position, 1500)
+        .easing(TWEEN.Easing.Quadratic.InOut)
+        .start()
+        .onComplete(function ()
+        {
+            TWEEN.remove(this)
+        })
+}
 
 export default function Intro()
 {
-    const [started, setStarted] = useState(false)
-    const vec = new THREE.Vector3()
+    const camera = useThree(state => state.camera)
 
     useEffect(() =>
     {
-        setStarted(true)
+        animateCamera({x: 0, y: 0.275, z: 6}, camera)
     }, [])
 
     useFrame(state =>
     {
-        console.log(state.camera.position.z, started)
-
-        if(state.camera.position.z < 6.1)
-        {
-            setStarted(false)
-            return null
-        }
-        if(started)
-        {
-            state.camera.lookAt(0, 0, 0)
-            state.camera.position.lerp(vec.set(0, 1, 6), .02)
-        }
+        console.log([
+            state.camera.position.x,
+            state.camera.position.y,
+            state.camera.position.z,
+        ])
+        TWEEN.update()
         return null
     })
 }

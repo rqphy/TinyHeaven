@@ -1,7 +1,5 @@
 import { useGLTF } from "@react-three/drei"
 
-
-
 export default function Island()
 {
     const island = useGLTF('./low_poly_flying_island/scene.gltf')
