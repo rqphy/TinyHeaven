@@ -4,7 +4,7 @@
 
 Have you seen [Joshua’s World]([https://www.joshuas.world/](https://www.joshuas.world/))? It’s an amazing website and I want to recreate an experience with the same idea. I’ve seen beautiful low poly plane on Sketchfab that I want to use in a project. I need a place to fly this plane thought. I was thinking about mountains but it’s hard to make it look good and there are rare.
 
-[Live]([https://tiny-heaven.netlify.app/](https://tiny-heaven.netlify.app/))
+[Live](https://tiny-heaven.netlify.app/)
 
 ## The method
 
@@ -20,6 +20,6 @@ Because I chose the Orbitcontrols, I need to find a way to move the plane at the
 
 ## Licences
 
-[Floating Island]([https://github.com/rqphy/TinyHeaven/blob/main/public/low_poly_flying_island/license.txt](https://github.com/rqphy/TinyHeaven/blob/main/public/low_poly_flying_island/license.txt))
+[Floating Island](https://github.com/rqphy/TinyHeaven/blob/main/public/low_poly_flying_island/license.txt))
 
-[Plante]([https://github.com/rqphy/TinyHeaven/blob/main/public/low_poly_plane/license.txt](https://github.com/rqphy/TinyHeaven/blob/main/public/low_poly_plane/license.txt))
+[Plante](https://github.com/rqphy/TinyHeaven/blob/main/public/low_poly_plane/license.txt))
