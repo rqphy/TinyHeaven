@@ -1,0 +1,21 @@
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: 200;
+}
+
+.loader svg {
+    animation: rotating 2.79s cubic-bezier(.65, .54, .12, .93) infinite;
+}
+
+@keyframes rotating {
+    from { transform: rotate(-720deg); }
+    to { transform: none; }
+}
