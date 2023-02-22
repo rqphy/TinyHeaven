@@ -4,13 +4,15 @@ header {
     left: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 40px;
     width: 100%;
-    padding: 10px 20px;
     z-index: 10;
+    padding: 10px 0 10px 20px;
 }
 
 header a {
+    padding: 10px 20px;
     color: #000000;
     text-decoration: none;
 }
