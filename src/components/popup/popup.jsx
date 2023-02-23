@@ -1,7 +1,6 @@
 import './popup.css'
 import useMessage from '../../stores/useMessage'
 import { useEffect } from 'react'
-import Tutorial from '../tutorial/tutorial'
 
 export default function Popup()
 {
@@ -20,7 +19,6 @@ export default function Popup()
     }, [])
     
     return <div className="popup">
-        <Tutorial />
         {
             messages[messageId]
         }
