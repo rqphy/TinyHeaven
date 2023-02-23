@@ -43,7 +43,7 @@ export default function Experience()
 
         for(let i = 0; i < messagesLength; i++)
         {
-            if( azimuthAngle >= 0.02 + i / messagesLength
+            if( azimuthAngle >= 0.08 + i / messagesLength
                 && azimuthAngle < 0.25 + i / messagesLength
             ) {
                 tempId = i
