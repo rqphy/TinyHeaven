@@ -20,6 +20,6 @@ Because I chose the Orbitcontrols, I need to find a way to move the plane at the
 
 ## Licences
 
-[Floating Island](https://github.com/rqphy/TinyHeaven/blob/main/public/low_poly_flying_island/license.txt))
+[Floating Island](https://github.com/rqphy/TinyHeaven/blob/main/public/low_poly_flying_island/license.txt)
 
-[Plante](https://github.com/rqphy/TinyHeaven/blob/main/public/low_poly_plane/license.txt))
+[Plante](https://github.com/rqphy/TinyHeaven/blob/main/public/low_poly_plane/license.txt)
