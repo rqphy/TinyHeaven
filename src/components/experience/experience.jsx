@@ -11,8 +11,15 @@ export default function Experience() {
 	const setMessageId = useMessage((state) => state.setMessageId)
 	const messagesLength = useMessage((state) => state.messagesLength)
 
+	const currentTimeout = useRef(null)
 	const handleControlsStart = () => {
+		clearTimeout(currentTimeout.current)
 		controls.current.autoRotate = false
+	}
+	const handleControlsEnd = () => {
+		currentTimeout.current = setTimeout(() => {
+			controls.current.autoRotate = true
+		}, 3000)
 	}
 
 	const plane = useRef()
@@ -76,6 +83,7 @@ export default function Experience() {
 				autoRotateSpeed={-0.4}
 				onChange={handleOrbitMove}
 				onStart={handleControlsStart}
+				onEnd={handleControlsEnd}
 			/>
 			<directionalLight
 				castShadow
