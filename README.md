@@ -4,7 +4,7 @@
 
 Have you seen [Joshua’s World](https://www.joshuas.world/)? It’s an amazing website and I want to recreate an experience with the same idea. I’ve seen beautiful low poly plane on Sketchfab that I want to use in a project. I need a place to fly this plane thought. I was thinking about mountains but it’s hard to make it look good and there are rare.
 
-[Live](https://tiny-heaven.netlify.app/)
+[Live](https://tiny.raphael-ferreira.com)
 
 ## The method
 
